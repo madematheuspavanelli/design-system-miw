@@ -9,7 +9,7 @@ type Props = {
 export function Button({ children, size = "md", variant = "primary" }: Props) {
   return (
     <button
-      className={`text-sm rounded-md 
+      className={`rounded-md text-sm 
       ${size === "sm" && "px-2.5 py-1"}
       ${size === "md" && "px-4 py-2"} 
       ${size === "lg" && "px-5 py-3"}  
