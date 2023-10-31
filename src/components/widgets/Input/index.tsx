@@ -17,11 +17,12 @@ export function Input({
     <input
       placeholder={placeholder}
       disabled={disabled}
-      className={`py-2.5 px-2 border-grey border-2 border-solid rounded-[3px] text-sm disabled:cursor-not-allowed
-        outline-none focus:border-blue
+      className={`relative rounded-[3px] border-2 border-solid border-grey px-2 py-2.5 pr-6 text-sm outline-none
+        focus:border-blue disabled:cursor-not-allowed
         ${variant === "compact" && "py-1.5"}
         ${error && "border-priority-red"}
         ${disabled && "border-grey"}
+        ${searchable && `bg-[url(/search.svg)] bg-[9.75rem] bg-no-repeat`}
         `}
     />
   );
